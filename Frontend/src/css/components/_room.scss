@@ -1,0 +1,159 @@
+.room {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  border: 2px solid black;
+  border-radius: 6%;
+  padding: 0.5 0.5rem 1rem 1rem;
+  background-color: gray;
+  color: whitesmoke;
+  position: relative;
+  width: 50%;
+  float: left;
+
+  background-color: rgb(105, 81, 148);
+}
+.head__allrooms {
+  margin-left: 2.7rem;
+  margin-bottom: 3rem;
+}
+.deleteButton {
+  margin-top: 16rem;
+  float: right;
+  margin-right: 10rem;
+}
+.room__img__container {
+  opacity: 1;
+  transition: 0.5s ease;
+  pointer-events: none;
+  // width: 40vw;
+  // height: 50vh;
+  // position: relative;
+}
+.multiplerooms {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3rem;
+  margin-right: 4rem;
+}
+.multiplerooms1 {
+  @extend .multiplerooms;
+  margin-top: 37rem;
+}
+.room:hover .room__img__container {
+  opacity: 0.2;
+}
+
+.room:hover .room__button {
+  opacity: 1;
+}
+.room__button {
+  opacity: 0;
+  transition: 0.5s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.room__img {
+  border-radius: 6%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+  // margin-bottom: 10px;
+  // width: 40vw;
+  // height: 50vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+.room__desc,
+.room__name,
+.room__floor,
+.room__capacity,
+.room__price {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter__room {
+  width: 50vw;
+  height: 50vh;
+}
+.total__expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+}
+.total__stripe {
+  margin-left: 3rem;
+}
+.total__para {
+  margin-right: 5rem;
+
+  position: absolute;
+  left: 15rem;
+  bottom: 5rem;
+
+  top: 5.8rem;
+}
+.purchase__button {
+  // marginTop: '30px' , marginLeft: '33rem'
+  margin-top: 30px;
+  margin-left: 33rem;
+}
+// .purchase__button1 {
+//   // marginTop:'30px' , marginLeft:'33rem'
+//   margin-top: 30px;
+//   margin-left: 20rem;
+// }
+
+@media screen and (max-width: 960px) {
+  .room {
+    margin-top: 9rem;
+  }
+  .multiplerooms1 {
+    margin-top: 43rem;
+  }
+
+  .deleteButton {
+    margin-top: 11.6rem;
+    margin-right: 1rem;
+  }
+  .total__expenses {
+    display: inline-table;
+  }
+
+  .total__para {
+    float: left;
+    position: absolute;
+    left: 8rem;
+    top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .total__stripe {
+    margin-left: 6.3rem;
+  }
+  // .myroom__mob {
+  //   position: relative;
+  // }
+  .myroom_para_mob {
+    position: absolute;
+    right: -7.5rem;
+    // line-height: 1.4;
+    width: 100%;
+    display: flex;
+  }
+  .purchase__button {
+    position: absolute;
+    right: -9rem;
+    bottom: 12rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.home__main {
+  width: 100vw;
+  height: 100vh;
+}
+.home__header {
+  color: white;
+  padding-top: 5rem;
+}
+.home__img {
+  // margin-left: 22rem;
+  width: 100vw;
+  height: 120vh;
+}
+.home {
+  margin-top: 5.01rem;
+}
+
+@media screen and (max-width: 960px) {
+  .home__img {
+    width: 100%;
+    height: 76vh;
+  }
+}

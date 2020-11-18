@@ -1,0 +1,79 @@
+.form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  color: black;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.form__box {
+  width: 260px;
+  padding: 24px;
+  background: rgb(236, 227, 227);
+  border-radius: 6%;
+  opacity: 0.7;
+}
+.formcomponent {
+  margin-bottom: 1rem;
+}
+
+.linkButton {
+  text-decoration: none;
+  color: black;
+}
+.login__icon {
+  margin-left: 90px;
+}
+.login__button {
+  margin-left: 70px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.featured {
+  margin-top: 1rem;
+  position: absolute;
+  margin-left: 35rem;
+  margin-bottom: 1rem;
+}
+.header__login {
+  @extend .header;
+  margin-bottom: 0.5rem;
+}
+.error {
+  @extend .header;
+  color: red;
+}
+.signup__para {
+  margin: 1.8rem auto;
+  margin-left: 50px;
+}
+.login__para {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.8rem;
+  }
+  .featured {
+    position: absolute;
+    margin-left: 10rem;
+    margin-bottom: 0.3rem;
+
+    margin-top: 6rem;
+  }
+}
